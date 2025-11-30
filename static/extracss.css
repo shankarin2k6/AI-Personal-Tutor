@@ -1,0 +1,36 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Classroom Info */
+.classroom-info {
+    background-color: #17a2b8;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Teacher's Desk */
+.teacher-desk {
+    background-color: #ffcc00;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Student Desks */
+.student-desk {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

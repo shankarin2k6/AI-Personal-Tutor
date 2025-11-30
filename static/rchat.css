@@ -1,0 +1,122 @@
+/* Button at bottom-left */
+#rchatToggleBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+}
+
+/* Chatbot container (hidden by default) */
+#rchatContainer {
+    position: fixed;
+    bottom: 0;
+    left: -350px; /* Initially hidden */
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+/* Chatbot visible */
+#rchatContainer.active {
+    left: 20px; /* Slide in */
+}
+
+/* Header */
+#rchatHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+/* Chat messages */
+#rchatMessages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Input area */
+#rchatInputContainer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#rchatInput {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#rchatSendBtn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+#rchatToggleBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#rchatContainer {
+    position: fixed;
+    bottom: 0;
+    left: -300px;  /* Initially hidden */
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    transition: left 0.3s ease-in-out;
+}
+
+#rchatContainer.active {
+    left: 20px;  /* Slide in from left */
+}
+
+#rchatHeader {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rchatMessages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#rchatCloseBtn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
